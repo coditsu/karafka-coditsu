@@ -14,8 +14,8 @@ Gem::Specification.new do |spec|
   spec.description = 'Coditsu overwrites for default Karafka classes'
   spec.license     = 'Trade secret'
 
-  spec.add_dependency 'karafka'
   spec.add_dependency 'airbrake', '~> 5.0'
+  spec.add_dependency 'karafka'
   spec.required_ruby_version = '>= 2.5.0'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(spec)/}) }

@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Karafka Coditsu namespace with monitor and other things
 module KarafkaCoditsu
   # Monitoring class for Karafka process
   class Monitor < Karafka::Monitor
