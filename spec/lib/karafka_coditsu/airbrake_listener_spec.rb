@@ -9,7 +9,7 @@ RSpec.describe KarafkaCoditsu::AirbrakeListener do
 
     it 'expect to notify airbrake' do
       expect(Airbrake).to receive(:notify).with(error)
-      airbrake_listener.on_notice_error(caller_class, { error: error })
+      airbrake_listener.on_notice_error(caller_class, error: error)
     end
   end
 
