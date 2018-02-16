@@ -4,6 +4,12 @@
 module KarafkaCoditsu
   # Airbrake/Errbit listener for error only notifications upon Karafka problems
   module AirbrakeListener
+    # Postfixes of things that we need to log
+    PROBLEM_POSTFIXES = %w[
+      _error
+      _retry
+    ].freeze
+
     class << self
       # All the events in which something went wrong trigger the *_error method, so we can
       #   catch all of them and notify Airbrake about that.
@@ -12,7 +18,9 @@ module KarafkaCoditsu
       # @param args [Array] arguments of this method
       # @param block [Proc] additional block of this method
       def method_missing(method_name, *args, &block)
-        return super unless method_name.to_s.end_with?('_error')
+        return super unless PROBLEM_POSTFIXES.any? do |postfix|
+                              method_name.to_s.end_with?(postfix)
+                            end
 
         Airbrake.notify(args.last[:error])
       end
@@ -20,7 +28,9 @@ module KarafkaCoditsu
       # @param method_name [Symbol] name of a method we want to run
       # @return [Boolean] true if we respond to this missing method
       def respond_to_missing?(method_name, include_private = false)
-        method_name.to_s.end_with?('_error') || super
+        PROBLEM_POSTFIXES.any? do |postfix|
+          method_name.to_s.end_with?(postfix)
+        end
       end
     end
   end
