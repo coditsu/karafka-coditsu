@@ -32,6 +32,7 @@ module KarafkaCoditsu
       private
 
       # @param method_name [Symbol] name of invoked method
+      # @return [Boolean] true if we are supposed to do something with a given method execution
       def eligible?(method_name)
         PROBLEM_POSTFIXES.any? do |postfix|
           method_name.to_s.end_with?(postfix)
