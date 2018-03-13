@@ -4,11 +4,28 @@ RSpec.describe KarafkaCoditsu::Parser do
   subject(:parser_class) { described_class }
 
   describe '.parse' do
-    context 'when we can parse given content' do
-      let(:content_source) { { rand.to_s => rand.to_s } }
+    context 'when we can parse given content and it is a nested hash' do
+      let(:content_source) { { 'repository' => { 'name' => 'test', 'id' => rand } } }
       let(:content) { content_source.to_json }
 
-      it 'expect to parse' do
+      it 'expect to parse into a data key' do
+        expect(parser_class.parse(content)).to eq('data' => content_source['repository'])
+      end
+    end
+
+    context 'when content is malformatted' do
+      let(:content) { 'abc' }
+
+      it 'expect to raise with Karafka internal parsing error' do
+        expect { parser_class.parse(content) }.to raise_error(::Karafka::Errors::ParserError)
+      end
+    end
+
+    context 'when we can parse given content and it is a flat hash' do
+      let(:content_source) { { 'name' => 'test', 'id' => rand } }
+      let(:content) { content_source.to_json }
+
+      it 'expect to parse into a data key' do
         expect(parser_class.parse(content)).to eq('data' => content_source)
       end
     end
