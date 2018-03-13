@@ -9,7 +9,7 @@ RSpec.describe KarafkaCoditsu::Parser do
       let(:content) { content_source.to_json }
 
       it 'expect to parse' do
-        expect(parser_class.parse(content)).to eq('value' => content_source)
+        expect(parser_class.parse(content)).to eq('data' => content_source)
       end
     end
 
