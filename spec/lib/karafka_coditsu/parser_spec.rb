@@ -9,7 +9,7 @@ RSpec.describe KarafkaCoditsu::Parser do
       let(:content) { content_source.to_json }
 
       it 'expect to parse into a data key' do
-        expect(parser_class.parse(content)).to eq('data' => content_source['repository'])
+        expect(parser_class.parse(content)).to eq('value' => content_source)
       end
     end
 
@@ -26,7 +26,7 @@ RSpec.describe KarafkaCoditsu::Parser do
       let(:content) { content_source.to_json }
 
       it 'expect to parse into a data key' do
-        expect(parser_class.parse(content)).to eq('data' => content_source)
+        expect(parser_class.parse(content)).to eq('value' => content_source)
       end
     end
 

@@ -15,9 +15,7 @@ module KarafkaCoditsu
     # @example Flatten hash
     #   Parser.parse("{\"name\":\"a\",\"id\":8}") #=> { 'data' => { 'name' => 'a', 'id' => 8 } }
     def self.parse(content)
-      parsed = Karafka::Parsers::Json.parse(content)
-
-      { 'data' => parsed.size == 1 ? parsed.values[0] : parsed }
+      { 'value' => Karafka::Parsers::Json.parse(content) }
     end
 
     # @param content [Object] any object that we want to convert to a json string
