@@ -19,6 +19,13 @@ module KarafkaCoditsu
           event: method_name
         }
       end
+
+      # @param method_name [Symbol] name of method
+      # @param include_private [Boolean] should be included in private checks
+      # @return [Boolean] do we take care of this missing method
+      def respond_to_missing?(method_name, include_private = false)
+        true
+      end
     end
   end
 end
