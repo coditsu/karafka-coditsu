@@ -30,7 +30,7 @@ RSpec.describe KarafkaCoditsu::ResponseBuilder do
       let(:args) { [1] }
 
       it 'expect to generate a proper hash with values' do
-        is_expected.to eq(resource: args[0], event: name)
+        expect(result).to eq(resource: args[0], event: name)
       end
     end
   end
