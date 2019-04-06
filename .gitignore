@@ -1,6 +1,7 @@
 *.gem
 *.rbc
 .bundle
+.coditsu/local.yml
 .config
 .idea
 .yardoc
