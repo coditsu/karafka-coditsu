@@ -15,7 +15,7 @@ GEM
       tzinfo (~> 1.1)
     airbrake (9.2.1)
       airbrake-ruby (~> 4.3)
-    airbrake-ruby (4.3.0)
+    airbrake-ruby (4.4.0)
       rbtree3 (~> 0.5)
     concurrent-ruby (1.1.5)
     delivery_boy (0.2.7)
@@ -99,7 +99,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    ruby-kafka (0.7.6)
+    ruby-kafka (0.7.7)
       digest-crc
     simplecov (0.16.1)
       docile (~> 1.1)
