@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe KarafkaCoditsu::AirbrakeListener do
-  subject(:airbrake_listener) { described_class }
+  subject(:airbrake_listener) { described_class.new }
 
   describe 'error trigger event' do
     let(:caller_class) { Class.new }
