@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git@github.com:karafka/karafka
-  revision: 002ba10fc93598691c163752937e823ecb888098
+  revision: c0cab7b39f6f3b3e1b27673b906ea140bed8665f
   specs:
     karafka (1.3.0)
       dry-configurable (~> 0.8)
