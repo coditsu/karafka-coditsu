@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe KarafkaCoditsu::ResponseBuilder do
+RSpec.describe_current do
   describe 'dynamically generated responses' do
     subject(:result) { described_class.send(name, *args) }
 
