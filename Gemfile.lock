@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: 8ae3cbfe9897eb048955b21c444bf7c77b034a7c
+  revision: 148572a8ed70066142d1f0bd2561611ef5eb99da
   specs:
     support_engine (0.1.4)
       activesupport
@@ -22,7 +22,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2)
-    airbrake (9.5.4)
+    airbrake (9.5.5)
       airbrake-ruby (~> 4.8)
     airbrake-ruby (4.8.0)
       rbtree3 (~> 0.5)
