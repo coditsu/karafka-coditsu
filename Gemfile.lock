@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: b6b9eb7491877cfe2054bb88cad18bb31edd0ddf
+  revision: 710ce1b34484670f03d0100a73ab2634d51c8d78
   specs:
     support_engine (0.1.4)
       activesupport
@@ -24,7 +24,7 @@ GEM
       zeitwerk (~> 2.2)
     airbrake (9.5.5)
       airbrake-ruby (~> 4.8)
-    airbrake-ruby (4.10.1)
+    airbrake-ruby (4.11.0)
       rbtree3 (~> 0.5)
     concurrent-ruby (1.1.5)
     delivery_boy (0.2.8)
@@ -148,4 +148,4 @@ DEPENDENCIES
   support_engine!
 
 BUNDLED WITH
-   2.1.0
+   2.1.1
