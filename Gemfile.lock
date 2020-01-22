@@ -104,7 +104,7 @@ GEM
     minitest (5.14.0)
     multi_json (1.14.1)
     rake (13.0.1)
-    rbtree3 (0.5.0)
+    rbtree3 (0.6.0)
     reline (0.1.2)
       io-console (~> 0.5)
     rspec (3.9.0)
