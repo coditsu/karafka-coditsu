@@ -13,7 +13,7 @@ RSpec.describe_current do
     end
   end
 
-  describe 'respond to missing' do
+  describe 'respond to missing for #on_notice_error' do
     it { expect(airbrake_listener.respond_to?(:on_notice_error)).to eq true }
   end
 
@@ -27,7 +27,7 @@ RSpec.describe_current do
     end
   end
 
-  describe 'respond to missing' do
+  describe 'respond to missing for #on_sync_producer_call_retry' do
     it { expect(airbrake_listener.respond_to?(:on_sync_producer_call_retry)).to eq true }
   end
 end
