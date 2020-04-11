@@ -24,7 +24,7 @@ GEM
       zeitwerk (~> 2.2)
     airbrake (9.5.5)
       airbrake-ruby (~> 4.8)
-    airbrake-ruby (4.13.4)
+    airbrake-ruby (4.14.0)
       rbtree3 (~> 0.5)
     concurrent-ruby (1.1.6)
     delivery_boy (1.0.1)
