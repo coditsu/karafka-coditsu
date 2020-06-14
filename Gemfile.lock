@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: bd4341b1854fe8c6492ea08687452bf90a167fdb
+  revision: 4cac145e6290f520050ce86d0664a0e43f88daf1
   specs:
     support_engine (0.1.4)
       activesupport
@@ -120,7 +120,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.3)
-    ruby-kafka (1.0.0)
+    ruby-kafka (1.1.0)
       digest-crc
     simplecov (0.18.5)
       docile (~> 1.1)
