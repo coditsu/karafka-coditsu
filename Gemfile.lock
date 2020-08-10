@@ -26,7 +26,7 @@ GEM
       airbrake-ruby (~> 4.8)
     airbrake-ruby (4.15.0)
       rbtree3 (~> 0.5)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.7)
     delivery_boy (1.0.1)
       king_konf (~> 0.3)
       ruby-kafka (~> 1.0)
