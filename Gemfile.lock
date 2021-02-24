@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: cab8c46700db2708c6b38cbf37dbdc7fb9356f70
+  revision: 343d156d5497af7e217a214e0ec260e6708e3270
   specs:
     support_engine (0.1.4)
       activesupport
@@ -97,7 +97,7 @@ GEM
       waterdrop (~> 1.4.0)
       zeitwerk (~> 2.1)
     king_konf (1.0.0)
-    minitest (5.14.3)
+    minitest (5.14.4)
     rake (13.0.3)
     rbtree3 (0.6.0)
     reline (0.2.3)
