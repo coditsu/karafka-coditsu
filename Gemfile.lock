@@ -43,19 +43,17 @@ GEM
     dry-core (0.5.0)
       concurrent-ruby (~> 1.0)
     dry-equalizer (0.3.0)
-    dry-events (0.2.0)
+    dry-events (0.3.0)
       concurrent-ruby (~> 1.0)
-      dry-core (~> 0.4)
-      dry-equalizer (~> 0.2)
+      dry-core (~> 0.5, >= 0.5)
     dry-inflector (0.2.0)
     dry-initializer (3.0.4)
     dry-logic (1.1.0)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.5, >= 0.5)
-    dry-monitor (0.3.2)
+    dry-monitor (0.4.0)
       dry-configurable (~> 0.5)
-      dry-core (~> 0.4)
-      dry-equalizer (~> 0.2)
+      dry-core (~> 0.5, >= 0.5)
       dry-events (~> 0.2)
     dry-schema (1.6.1)
       concurrent-ruby (~> 1.0)
@@ -145,4 +143,4 @@ DEPENDENCIES
   support_engine!
 
 BUNDLED WITH
-   2.2.15
+   2.2.16
