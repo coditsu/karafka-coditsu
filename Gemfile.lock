@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: 486efc92a25dc8cde562d8c6665ef0570b61bd88
+  revision: b2b3a99e8350b0cbb60b05a08c83a67290b44abe
   specs:
     support_engine (0.1.4)
       activesupport
@@ -119,7 +119,7 @@ GEM
       simplecov-html (~> 0.11)
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
-    simplecov_json_formatter (0.1.2)
+    simplecov_json_formatter (0.1.3)
     thor (1.1.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -133,6 +133,8 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
+  x86_64-darwin
+  x86_64-darwin-19
   x86_64-linux
 
 DEPENDENCIES
