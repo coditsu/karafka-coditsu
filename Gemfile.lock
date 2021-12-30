@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: 54db843b5cc48a60b274ae4ed9fcb1173b75be3d
+  revision: 5745209c8d773e4779532898d830f4dc10c0e847
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -128,7 +128,7 @@ GEM
       dry-validation (~> 1.7)
       ruby-kafka (>= 1.3.0)
       zeitwerk (~> 2.4)
-    zeitwerk (2.5.1)
+    zeitwerk (2.5.2)
 
 PLATFORMS
   x86_64-darwin
@@ -142,4 +142,4 @@ DEPENDENCIES
   support_engine!
 
 BUNDLED WITH
-   2.3.3
+   2.3.4
