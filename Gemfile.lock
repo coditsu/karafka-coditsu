@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: 08dc701cde03a3415d81fb93f39a3c3e06d8f939
+  revision: 23ca562b5f722fefc8827afa4ff6e8da9d3b661e
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -75,7 +75,7 @@ GEM
       dry-schema (~> 1.8, >= 1.8.0)
     envlogic (1.1.4)
       dry-inflector (~> 0.1)
-    i18n (1.8.11)
+    i18n (1.9.0)
       concurrent-ruby (~> 1.0)
     karafka (1.4.12)
       dry-configurable (~> 0.13)
@@ -136,4 +136,4 @@ DEPENDENCIES
   support_engine!
 
 BUNDLED WITH
-   2.3.5
+   2.3.6
