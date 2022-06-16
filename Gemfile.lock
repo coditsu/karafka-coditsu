@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: a1b91edae51e0f92b024bb173b85d96167c546dc
+  revision: bc75d1dd418c1dae2f17c479a69dad1dec7eaa0f
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -24,7 +24,7 @@ GEM
       zeitwerk (~> 2.3)
     airbrake (13.0.2)
       airbrake-ruby (~> 6.0)
-    airbrake-ruby (6.1.0)
+    airbrake-ruby (6.1.1)
       rbtree3 (~> 0.5)
     concurrent-ruby (1.1.10)
     delivery_boy (1.1.0)
@@ -88,7 +88,7 @@ GEM
       waterdrop (~> 1.4)
       zeitwerk (~> 2.4)
     king_konf (1.0.0)
-    minitest (5.15.0)
+    minitest (5.16.0)
     rake (13.0.6)
     rbtree3 (0.7.0)
     rspec (3.11.0)
@@ -122,7 +122,7 @@ GEM
       dry-validation (~> 1.7)
       ruby-kafka (>= 1.3.0)
       zeitwerk (~> 2.4)
-    zeitwerk (2.5.4)
+    zeitwerk (2.6.0)
 
 PLATFORMS
   arm64-darwin
@@ -136,4 +136,4 @@ DEPENDENCIES
   support_engine!
 
 BUNDLED WITH
-   2.3.15
+   2.3.16
