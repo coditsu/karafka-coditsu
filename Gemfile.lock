@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: 1ede6bcc8af045014a59303f9e0e0592aa88cffc
+  revision: b25864840002ef374cf231475435f9b013249b35
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -37,9 +37,9 @@ GEM
     dry-configurable (0.15.0)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.6)
-    dry-container (0.10.0)
+    dry-container (0.10.1)
       concurrent-ruby (~> 1.0)
-    dry-core (0.8.0)
+    dry-core (0.8.1)
       concurrent-ruby (~> 1.0)
     dry-events (0.3.0)
       concurrent-ruby (~> 1.0)
@@ -113,7 +113,7 @@ GEM
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
     thor (1.2.1)
-    tzinfo (2.0.4)
+    tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     waterdrop (1.4.4)
       delivery_boy (>= 0.2, < 2.x)
@@ -136,4 +136,4 @@ DEPENDENCIES
   support_engine!
 
 BUNDLED WITH
-   2.3.18
+   2.3.19
