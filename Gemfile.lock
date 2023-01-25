@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: b3927e7e273627f58700880fc4571d1dc359cdfd
+  revision: f2ead3d0e50c85ddc4416ef406be490f68df61db
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -16,7 +16,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.1.7.1)
+    activesupport (6.1.7.2)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -26,13 +26,13 @@ GEM
       airbrake-ruby (~> 6.0)
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.2.0)
     diff-lcs (1.5.0)
     docile (1.4.0)
     ffi (1.15.5)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
-    karafka (2.0.27)
+    karafka (2.0.28)
       karafka-core (>= 2.0.9, < 3.0.0)
       thor (>= 0.20)
       waterdrop (>= 2.4.9, < 3.0.0)
@@ -87,4 +87,4 @@ DEPENDENCIES
   support_engine!
 
 BUNDLED WITH
-   2.4.4
+   2.4.5
