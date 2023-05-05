@@ -44,7 +44,7 @@ GEM
       ffi (~> 1.15)
       mini_portile2 (~> 2.6)
       rake (> 12)
-    mini_portile2 (2.8.1)
+    mini_portile2 (2.8.2)
     minitest (5.18.0)
     rake (13.0.6)
     rbtree3 (0.7.1)
