@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: 0e40bb3719bc9a91cd961adfc36fb3926f845699
+  revision: c382bfe7a6a694bab93768ecde2705930ef3d603
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -16,7 +16,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.1.7.3)
+    activesupport (6.1.7.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -37,10 +37,10 @@ GEM
       thor (>= 0.20)
       waterdrop (>= 2.6.1, < 3.0.0)
       zeitwerk (~> 2.3)
-    karafka-core (2.1.0)
+    karafka-core (2.1.1)
       concurrent-ruby (>= 1.1)
-      karafka-rdkafka (>= 0.13.0, < 0.14.0)
-    karafka-rdkafka (0.13.0)
+      karafka-rdkafka (>= 0.13.1, < 0.14.0)
+    karafka-rdkafka (0.13.2)
       ffi (~> 1.15)
       mini_portile2 (~> 2.6)
       rake (> 12)
@@ -60,7 +60,7 @@ GEM
     rspec-mocks (3.12.5)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
-    rspec-support (3.12.0)
+    rspec-support (3.12.1)
     simplecov (0.22.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -70,8 +70,8 @@ GEM
     thor (1.2.2)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    waterdrop (2.6.2)
-      karafka-core (>= 2.1.0, < 3.0.0)
+    waterdrop (2.6.3)
+      karafka-core (>= 2.1.1, < 3.0.0)
       zeitwerk (~> 2.3)
     zeitwerk (2.6.8)
 
