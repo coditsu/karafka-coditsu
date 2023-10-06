@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: b3e36867def94e6695e5af6abc8034b55df915d3
+  revision: 011b702728bdf8740b747d7abf37f44c7ec75914
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -24,12 +24,12 @@ GEM
       zeitwerk (~> 2.3)
     airbrake (13.0.3)
       airbrake-ruby (~> 6.0)
-    airbrake-ruby (6.2.1)
+    airbrake-ruby (6.2.2)
       rbtree3 (~> 0.6)
     concurrent-ruby (1.2.2)
     diff-lcs (1.5.0)
     docile (1.4.0)
-    ffi (1.16.2)
+    ffi (1.16.3)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     karafka (2.2.6)
