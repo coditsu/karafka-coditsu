@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: 011b702728bdf8740b747d7abf37f44c7ec75914
+  revision: af7cd9c58c23e04038ece0b1426b96c4e78b48e2
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -32,7 +32,7 @@ GEM
     ffi (1.16.3)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    karafka (2.2.6)
+    karafka (2.2.7)
       karafka-core (>= 2.2.2, < 2.3.0)
       thor (>= 0.20)
       waterdrop (>= 2.6.6, < 3.0.0)
