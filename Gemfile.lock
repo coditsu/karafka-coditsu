@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: 5b633355a0cf83363caaedc2d640f6d01bd516db
+  revision: aad5971efa376ff8aae91b55f4397613c82c34cf
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -26,7 +26,7 @@ GEM
       airbrake-ruby (~> 6.0)
     airbrake-ruby (6.2.2)
       rbtree3 (~> 0.6)
-    concurrent-ruby (1.2.2)
+    concurrent-ruby (1.2.3)
     diff-lcs (1.5.0)
     docile (1.4.0)
     ffi (1.16.3)
@@ -44,7 +44,7 @@ GEM
       mini_portile2 (~> 2.6)
       rake (> 12)
     mini_portile2 (2.8.5)
-    minitest (5.21.1)
+    minitest (5.21.2)
     rake (13.1.0)
     rbtree3 (0.7.1)
     rspec (3.12.0)
@@ -85,4 +85,4 @@ DEPENDENCIES
   support_engine!
 
 BUNDLED WITH
-   2.5.4
+   2.5.5
