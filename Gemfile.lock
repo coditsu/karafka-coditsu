@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: 546896aa4a97c439c1b279289843f6c6bed1f883
+  revision: 4cb328e018ea62fb89ae1377c70cb0df632ad010
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -32,7 +32,7 @@ GEM
     ffi (1.16.3)
     i18n (1.14.4)
       concurrent-ruby (~> 1.0)
-    karafka (2.3.3)
+    karafka (2.3.4)
       karafka-core (>= 2.3.0, < 2.4.0)
       waterdrop (>= 2.6.12, < 3.0.0)
       zeitwerk (~> 2.3)
@@ -44,7 +44,7 @@ GEM
       rake (> 12)
     mini_portile2 (2.8.5)
     minitest (5.22.3)
-    rake (13.1.0)
+    rake (13.2.1)
     rbtree3 (0.7.1)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
@@ -84,4 +84,4 @@ DEPENDENCIES
   support_engine!
 
 BUNDLED WITH
-   2.5.7
+   2.5.9
