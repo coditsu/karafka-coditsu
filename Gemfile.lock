@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: 4cb328e018ea62fb89ae1377c70cb0df632ad010
+  revision: 71aed5b65a530a87a4acfd627482839105d40d3d
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -42,7 +42,7 @@ GEM
       ffi (~> 1.15)
       mini_portile2 (~> 2.6)
       rake (> 12)
-    mini_portile2 (2.8.5)
+    mini_portile2 (2.8.6)
     minitest (5.22.3)
     rake (13.2.1)
     rbtree3 (0.7.1)
