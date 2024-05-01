@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: 71aed5b65a530a87a4acfd627482839105d40d3d
+  revision: 2611952b62c831b8ab4304adf9bae9b2f3d38e2d
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -32,13 +32,13 @@ GEM
     ffi (1.16.3)
     i18n (1.14.4)
       concurrent-ruby (~> 1.0)
-    karafka (2.3.4)
-      karafka-core (>= 2.3.0, < 2.4.0)
-      waterdrop (>= 2.6.12, < 3.0.0)
+    karafka (2.4.0)
+      karafka-core (>= 2.4.0, < 2.5.0)
+      waterdrop (>= 2.7.0, < 3.0.0)
       zeitwerk (~> 2.3)
-    karafka-core (2.3.0)
-      karafka-rdkafka (>= 0.14.8, < 0.15.0)
-    karafka-rdkafka (0.14.10)
+    karafka-core (2.4.0)
+      karafka-rdkafka (>= 0.15.0, < 0.16.0)
+    karafka-rdkafka (0.15.0)
       ffi (~> 1.15)
       mini_portile2 (~> 2.6)
       rake (> 12)
@@ -67,8 +67,8 @@ GEM
     simplecov_json_formatter (0.1.4)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    waterdrop (2.6.14)
-      karafka-core (>= 2.2.3, < 3.0.0)
+    waterdrop (2.7.0)
+      karafka-core (>= 2.4.0, < 3.0.0)
       zeitwerk (~> 2.3)
     zeitwerk (2.6.13)
 
