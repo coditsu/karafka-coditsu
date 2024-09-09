@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: 36c3ef5640dc18b76d9b4e497601b3d2370bc2d1
+  revision: a86c9f9673a3c9815adf4e96b2d6c06f3b61f332
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -35,7 +35,7 @@ GEM
     ffi (1.17.0-x86_64-linux-gnu)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
-    karafka (2.4.9)
+    karafka (2.4.11)
       base64 (~> 0.2)
       karafka-core (>= 2.4.3, < 2.5.0)
       karafka-rdkafka (>= 0.17.2)
@@ -43,7 +43,7 @@ GEM
       zeitwerk (~> 2.3)
     karafka-core (2.4.4)
       karafka-rdkafka (>= 0.15.0, < 0.18.0)
-    karafka-rdkafka (0.17.3)
+    karafka-rdkafka (0.17.6)
       ffi (~> 1.15)
       mini_portile2 (~> 2.6)
       rake (> 12)
@@ -55,9 +55,9 @@ GEM
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
       rspec-mocks (~> 3.13.0)
-    rspec-core (3.13.0)
+    rspec-core (3.13.1)
       rspec-support (~> 3.13.0)
-    rspec-expectations (3.13.2)
+    rspec-expectations (3.13.3)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-mocks (3.13.1)
@@ -68,7 +68,7 @@ GEM
       docile (~> 1.1)
       simplecov-html (~> 0.11)
       simplecov_json_formatter (~> 0.1)
-    simplecov-html (0.12.3)
+    simplecov-html (0.13.1)
     simplecov_json_formatter (0.1.4)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -76,7 +76,7 @@ GEM
       karafka-core (>= 2.4.3, < 3.0.0)
       karafka-rdkafka (>= 0.15.1)
       zeitwerk (~> 2.3)
-    zeitwerk (2.6.17)
+    zeitwerk (2.6.18)
 
 PLATFORMS
   arm64-darwin
@@ -90,4 +90,4 @@ DEPENDENCIES
   support_engine!
 
 BUNDLED WITH
-   2.5.17
+   2.5.18
