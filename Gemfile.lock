@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: 4d5578d69ab724c1f6d41aac9ca55aadb5fe7eab
+  revision: a9c6a29be265929c6528f53a5ecde1be2dc70beb
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -35,9 +35,9 @@ GEM
     ffi (1.17.0-x86_64-linux-gnu)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
-    karafka (2.4.12)
+    karafka (2.4.13)
       base64 (~> 0.2)
-      karafka-core (>= 2.4.3, < 2.5.0)
+      karafka-core (>= 2.4.4, < 2.5.0)
       karafka-rdkafka (>= 0.17.2)
       waterdrop (>= 2.7.3, < 3.0.0)
       zeitwerk (~> 2.3)
@@ -76,7 +76,7 @@ GEM
       karafka-core (>= 2.4.3, < 3.0.0)
       karafka-rdkafka (>= 0.17.5)
       zeitwerk (~> 2.3)
-    zeitwerk (2.6.18)
+    zeitwerk (2.7.0)
 
 PLATFORMS
   arm64-darwin
@@ -90,4 +90,4 @@ DEPENDENCIES
   support_engine!
 
 BUNDLED WITH
-   2.5.20
+   2.5.21
