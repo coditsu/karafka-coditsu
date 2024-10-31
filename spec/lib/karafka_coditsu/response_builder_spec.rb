@@ -36,6 +36,6 @@ RSpec.describe_current do
   end
 
   describe '#respond_to?' do
-    it { expect(described_class.respond_to?(:test_name)).to eq(true) }
+    it { expect(described_class.respond_to?(:test_name)).to be(true) }
   end
 end
