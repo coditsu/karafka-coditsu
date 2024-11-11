@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: 42f1ccfb7e9c03db10813039acd70b757fb96f80
+  revision: f620cbc6d0dda55ac55fb23078dea18492039300
   specs:
     support_engine (0.1.4)
       activesupport (< 7)
@@ -90,4 +90,4 @@ DEPENDENCIES
   support_engine!
 
 BUNDLED WITH
-   2.5.22
+   2.5.23
