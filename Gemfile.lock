@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coditsu/support-engine.git
-  revision: 323484d6b053d3b15611d4a99511e2ccebd8d9f7
+  revision: 52248aa12983fbb85b26dd675c3c53046097c665
   specs:
     support_engine (0.1.4)
       activesupport (< 8)
@@ -17,7 +17,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.2.2.1)
+    activesupport (7.2.2.2)
       base64
       benchmark (>= 0.3)
       bigdecimal
@@ -52,7 +52,7 @@ GEM
       karafka-rdkafka (>= 0.19.5)
       waterdrop (>= 2.8.3, < 3.0.0)
       zeitwerk (~> 2.3)
-    karafka-core (2.5.2)
+    karafka-core (2.5.5)
       karafka-rdkafka (>= 0.19.2, < 0.21.0)
       logger (>= 1.6.0)
     karafka-rdkafka (0.20.1)
