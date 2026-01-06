@@ -8,8 +8,6 @@ module KarafkaCoditsu
     # All errors are reported through this single event
     #
     # @param event [Karafka::Core::Monitoring::Event] the error event
-    def on_error_occurred(event)
-      Airbrake.notify(event[:error])
-    end
+    def on_error_occurred(event) = Airbrake.notify(event[:error])
   end
 end
