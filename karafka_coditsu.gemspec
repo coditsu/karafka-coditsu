@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name        = 'karafka_coditsu'
-  spec.version     = '1.0.0'
+  spec.version     = '2.0.0'
   spec.platform    = Gem::Platform::RUBY
   spec.authors     = ['Maciej Mensfeld']
   spec.email       = %w[contact@coditsu.io]
@@ -14,10 +14,13 @@ Gem::Specification.new do |spec|
   spec.description = 'Coditsu overwrites for default Karafka classes'
   spec.license     = 'LGPL-3.0'
 
+  spec.required_ruby_version = '>= 3.4'
+
   spec.add_dependency 'airbrake'
   spec.add_dependency 'karafka'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(spec)/}) }
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = %w[lib]
+  spec.metadata['rubygems_mfa_required'] = 'true'
 end

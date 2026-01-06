@@ -3,31 +3,19 @@
 RSpec.describe_current do
   subject(:airbrake_listener) { described_class.new }
 
-  describe 'error trigger event' do
-    let(:caller_class) { Class.new }
-    let(:error) { Class.new(StandardError) }
+  describe '#on_error_occurred' do
+    let(:error) { StandardError.new('test error') }
+    let(:event) { { error: } }
 
-    it 'expect to notify airbrake' do
-      expect(Airbrake).to receive(:notify).with(error)
-      airbrake_listener.on_notice_error(caller_class, error: error)
+    before { allow(Airbrake).to receive(:notify) }
+
+    it 'notifies airbrake with the error' do
+      airbrake_listener.on_error_occurred(event)
+      expect(Airbrake).to have_received(:notify).with(error)
     end
-  end
 
-  describe 'respond to missing for #on_notice_error' do
-    it { expect(airbrake_listener.respond_to?(:on_notice_error)).to be(true) }
-  end
-
-  describe 'retry trigger event' do
-    let(:caller_class) { Class.new }
-    let(:error) { Class.new(StandardError) }
-
-    it 'expect to notify airbrake' do
-      expect(Airbrake).to receive(:notify).with(error)
-      airbrake_listener.on_sync_producer_call_retry(caller_class, error: error)
+    it 'responds to on_error_occurred' do
+      expect(airbrake_listener.respond_to?(:on_error_occurred)).to be(true)
     end
-  end
-
-  describe 'respond to missing for #on_sync_producer_call_retry' do
-    it { expect(airbrake_listener.respond_to?(:on_sync_producer_call_retry)).to be(true) }
   end
 end

@@ -1,42 +1,14 @@
 # frozen_string_literal: true
 
-# Karafka Coditsu namespace with monitor and other things
+# Coditsu extensions for Karafka
 module KarafkaCoditsu
-  # Listener for error only notifications upon Karafka problems
+  # Listener for error notifications upon Karafka problems
+  # Subscribes to Karafka's error.occurred event and reports to Airbrake
   class AirbrakeListener
-    # Postfixes of things that we need to log
-    PROBLEM_POSTFIXES = %w[
-      _error
-      _retry
-    ].freeze
-
-    # All the events in which something went wrong trigger the *_error method, so we can
-    #   catch all of them and notify Airbrake about that.
+    # Karafka 2.x consolidated error event handler
+    # All errors are reported through this single event
     #
-    # @param method_name [Symbol] name of a method we want to run
-    # @param args [Array] arguments of this method
-    # @param block [Proc] additional block of this method
-    def method_missing(method_name, *args, &block)
-      return super unless eligible?(method_name)
-
-      Airbrake.notify(args.last[:error])
-    end
-
-    # @param method_name [Symbol] name of a method we want to run
-    # @param include_private [Boolean] should we include private methods as well
-    # @return [Boolean] true if we respond to this missing method
-    def respond_to_missing?(method_name, include_private = false)
-      eligible?(method_name) || super
-    end
-
-    private
-
-    # @param method_name [Symbol] name of invoked method
-    # @return [Boolean] true if we are supposed to do something with a given method execution
-    def eligible?(method_name)
-      PROBLEM_POSTFIXES.any? do |postfix|
-        method_name.to_s.end_with?(postfix)
-      end
-    end
+    # @param event [Karafka::Core::Monitoring::Event] the error event
+    def on_error_occurred(event) = Airbrake.notify(event[:error])
   end
 end

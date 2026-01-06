@@ -19,7 +19,7 @@ RSpec.describe_current do
     end
 
     context 'when we provide a block' do
-      subject(:result) { described_class.send(name, *args) {} }
+      subject(:result) { described_class.send(name, *args) { 'block' } }
 
       let(:args) { [1] }
 

@@ -6,9 +6,7 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 %w[
   simplecov
   support_engine/rspec_locator
-].each do |lib|
-  require lib
-end
+].each { require(it) }
 
 # Don't include unnecessary stuff into coverage
 SimpleCov.start do
@@ -18,7 +16,7 @@ SimpleCov.start do
   merge_timeout 600
 end
 
-Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].sort.each { |f| require f }
+Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { require(it) }
 
 RSpec.configure do |config|
   config.disable_monkey_patching!
