@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Coditsu extensions for Karafka
 module KarafkaCoditsu
   # Listener for error notifications upon Karafka problems
   # Subscribes to Karafka's error.occurred event and reports to Airbrake
